@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'net.ltgt.apt-idea' version "0.15"
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    options.annotationProcessorPath = configurations.annotationProcessor
+}
+
+compileTestJava {
+    options.compilerArgs += '-proc:none'
+}
+
+final DAGGER_VER = '2.16'
+dependencies {
+    implementation "com.google.dagger:dagger:${DAGGER_VER}"
+    implementation 'com.amazonaws:aws-lambda-java-core:1.2.0'
+    annotationProcessor"com.google.dagger:dagger-compiler:${DAGGER_VER}"
+    testImplementation 'junit:junit:4.12'
+}
