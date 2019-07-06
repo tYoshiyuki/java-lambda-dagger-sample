@@ -289,3 +289,5 @@ bin
 *.log
 *.swp
 *.bak
+generated
+generated_tests
