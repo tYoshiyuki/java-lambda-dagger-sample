@@ -6,7 +6,7 @@ import lambdadagger.component.DaggerAppComponent;
 import lambdadagger.application.LambdaApplication;
 
 /**
- * Handler for requests to Lambda function.
+ * Lambda関数のエントリーポイント
  */
 public class LambdaHandler implements RequestHandler<Object, Object> {
 

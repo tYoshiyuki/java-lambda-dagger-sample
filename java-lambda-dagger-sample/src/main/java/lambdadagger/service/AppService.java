@@ -9,9 +9,7 @@ import java.util.stream.Collectors;
 
 public class AppService {
     @Inject
-    public AppService() {
-
-    }
+    public AppService() { }
 
     public String getPageContents(String address) throws IOException {
         URL url = new URL(address);

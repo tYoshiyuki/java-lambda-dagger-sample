@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * メインとなるアプリケーションのクラスです
+ */
 public class LambdaApplication {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
